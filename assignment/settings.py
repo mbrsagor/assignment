@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'movie',
 
     'corsheaders',
+    'django_filters',
     'rest_framework',
 ]
 
@@ -124,3 +125,8 @@ CORS_ORIGIN_WHITELIST = [
     'http://localhost:3000',
     'http://localhost:8000'
 ]
+
+# Rest Framework Settings
+REST_FRAMEWORK = {
+    'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend']
+}
