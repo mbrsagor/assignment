@@ -4,9 +4,8 @@ chardet==4.0.0
 defusedxml==0.6.0
 Django==3.1.6
 django-cors-headers==3.7.0
-django-filter==2.4.0
 djangorestframework==3.12.2
-djangorestframework-filters==0.11.1
+djangorestframework-filters==1.0.0.dev0
 djangorestframework-simplejwt==4.6.0
 idna==2.10
 oauthlib==3.1.0

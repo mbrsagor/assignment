@@ -4,5 +4,6 @@ __pycache__/
 db.sqlite3
 migrations/
 media
+.vscode
 
 .DS_Store

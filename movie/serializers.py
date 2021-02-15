@@ -13,7 +13,7 @@ SUPERUSER_LIFETIME = datetime.timedelta(hours=45)
 class MovieSerializer(serializers.ModelSerializer):
     class Meta:
         model = Movie
-        fields = ['id', 'title', 'release_year']
+        fields = ['id', 'title', 'released', 'genre']
 
 
 class TokenObtainTokenSerializer(TokenObtainPairSerializer):
