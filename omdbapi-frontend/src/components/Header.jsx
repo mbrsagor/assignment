@@ -28,7 +28,7 @@ class Header extends Component {
                   <ul className="navbar-nav ml-auto mt-2 mt-lg-0">
                     <li className="nav-item active">
                       <Link className="nav-link" to="/">
-                        Movies List <span className="sr-only">(current)</span>
+                       Dashboard <span className="sr-only">(current)</span>
                       </Link>
                     </li>
                     <li className="nav-item">
