@@ -11,7 +11,7 @@ class MovieViewSet(ModelViewSet):
     queryset = Movie.objects.all()
     serializer_class = MovieSerializer
     filter_backends = [DjangoFilterBackend]
-    filterset_fields = ['id', 'title']
+    filterset_fields = ['title', 'release_year']
     permission_classes = [IsAuthenticated, ]
 
 
