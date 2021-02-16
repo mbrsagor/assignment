@@ -12,10 +12,10 @@ class Dashboard extends Component {
                 </div>
                 <hr/>
                 <div className="row">
-                <div className="col-md-8">
+                <div className="col-md-9">
                         <MovieList />
                 </div>
-                <div className="col-md-4">
+                <div className="col-md-3">
                     <SearchMovie />
                 </div>
                 </div>                

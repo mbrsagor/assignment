@@ -34,12 +34,15 @@ class MovieList extends Component {
                         <div className="row">
                         {movies && movies.map((movie, index) => {
                             return(
-                                <div key={index} className="col-md-4">
+                                <div key={index} className="col-md-4 mb-3">
                                     <Link to={movie.imdbID}>
                                         <img className="img-thumbnail" src={movie.Poster} alt="poster"/>
                                     </Link>
                                     <p>Title: {movie.Title}</p>
                                     <p>Year: {movie.Year}</p>
+                                    <button 
+                                    onClick={() => alert(`ID: ${index} \nTitle: ${movie.Title} \rRleased year: ${movie.Year}` )} 
+                                    className="btn btn-success btn-sm">Detail</button>
                                 </div>
                             )
                         })}
@@ -54,4 +57,4 @@ class MovieList extends Component {
     }
 }
 
-export default MovieList
+export default MovieList;
