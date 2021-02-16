@@ -3,22 +3,22 @@ import React, { Component } from 'react'
 class SearchMovie extends Component {
 
     state = {
-        keyword: '',
+        title: '',
         movies : []
     }
 
     changeHandler = e => {
         this.setState({
-            keyword: e.target.value
+            title: e.target.value
         })
     }
 
-    searchMovie = () => {
-        fetch(`http://www.omdbapi.com/?apikey=d65dad86&s=${this.state.keyword}`)
+    searchMovieHandler = () => {
+        fetch(`http://www.omdbapi.com/?apikey=d65dad86&s=${this.state.title}`)
             .then(res => res.json())
             .then(this.renderMovies)
             .catch(error => console.log(error))
-        }
+    }
 
     renderMovies = (response) => {
         this.setState({
@@ -34,12 +34,12 @@ class SearchMovie extends Component {
                  <input 
                     type="text"
                     onChange={this.changeHandler}
-                    vlaue={this.state.keyword}
+                    vlaue={this.state.title}
                     className="form-control"
-                    placeholder="Search Movie" 
+                    placeholder="Search Movie By Title" 
                  />
              </div>
-             <button onClick={this.searchMovie} className="btn btn-success btn-sm">Search</button>
+             <button onClick={this.searchMovieHandler} className="btn btn-success btn-sm">Search</button>
 
             <ul className="list-group mt-3">
                 {
