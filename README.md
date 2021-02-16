@@ -1,4 +1,4 @@
-# Assignment
+# Assignment OMDb API
 
 > The simple application I have developed a `Full-stack` project where has two part one backend and last one frontend. Backend used `Django` frontend used `React-redux` and `JWT` token based authentication system.
 
@@ -10,7 +10,6 @@ The following steps will walk you thru installation on a Mac. I think Linux shou
 
 - Python 3.8.5
 - Django 3.1.6
-- postgres  12.5
 
 ###### Backend API
 ```base
@@ -40,8 +39,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 #### Table of content:
 - User login
 - User Registration
-- User logout
 - Dashboard list of movies.
-- Search movie by title and year of release
+- Search movie by title
 - Follow best practices
 - Well documenation :-)

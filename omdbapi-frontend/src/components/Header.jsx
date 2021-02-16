@@ -32,10 +32,9 @@ class Header extends Component {
                       </Link>
                     </li>
                     <li className="nav-item">
-                      <Link className="nav-link" to="/">Add New </Link>
-                    </li>
-                    <li className="nav-item">
-                      <Link className="nav-link" to="/login">Login</Link>
+                      <Link className="nav-link" to="/login">
+                        {auth.user.isAuthenticated ? "logout": "login"}
+                      </Link>
                     </li>
                     <li className="nav-item">
                       <span className="nav-link">{auth.user.email}</span>

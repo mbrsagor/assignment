@@ -22,7 +22,7 @@ class MovieList extends Component {
     }
 
     render() {
-        console.log(this.state.movies)
+        // console.log(this.state.movies)
         let {movies} = this.state
         return (
             <>
