@@ -4,7 +4,7 @@
 
 ## Setup
 
-The following steps will walk you thru installation on a Mac. I think Linux should be similar. It's also possible to develop on a Windows machine, but I have not documented the steps. If you've developed django & react app on Windows, you should have little problem getting up and running.
+The following steps will walk you thru installation on a Mac. I think Linux should be similar. It's also possible to develop on a Windows machine, but I have not documented the steps. If you've developed django & react apps on Windows, you should have little problem getting up and running.
 
 ### Prerequisites
 
@@ -37,9 +37,10 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 
 #### Table of content:
-- User login
+- User login.
 - User Registration
+- JWT token based authentication system.
 - Dashboard list of movies.
-- Search movie by title
-- Follow best practices
-- Well documenation :-)
+- Search movie by title.
+- Follow best practices.
+- Well documenation. :-)
